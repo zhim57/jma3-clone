@@ -241,3 +241,6 @@ vite.config.ts.timestamp-*
 # output masquerading as source drifts silently and nobody notices. The usage
 # line now points at scripts/telemetry/out/, which the `out` rule above ignores.
 /log.jsonl
+problem.txt
+.opencode/
+opencode.json
