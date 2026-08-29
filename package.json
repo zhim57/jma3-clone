@@ -1,0 +1,30 @@
+{
+  "name": "jma3-clone",
+  "version": "0.1.0",
+  "description": "A lightweight, procedural-art fork of JMA3 for experimenting with turn-based-strategy AI players",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test",
+    "test:ai": "node --test tests/ai-*.test.js tests/adventure-ai.test.js tests/cunning-ai.test.js tests/combat-ai.test.js tests/combat-position-ai.test.js tests/combat.test.js tests/combat-*.test.js",
+    "lint": "eslint .",
+    "gate": "npm run lint && npm run test:ai",
+    "sim": "node scripts/sim/batch.mjs",
+    "sim:perf": "node scripts/sim/aiperf.mjs",
+    "sim:goals": "node scripts/sim/goal-audit.mjs"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "globals": "^15.15.0",
+    "vite": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
